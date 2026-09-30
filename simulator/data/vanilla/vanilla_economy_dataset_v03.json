@@ -1,0 +1,29 @@
+{
+  "version": "0.3",
+  "scope": "Vanilla economy core",
+  "notes": "52 economically meaningful vanilla items and 33 representative crafting/smelting recipes. Economic metadata is provisional and intended for simulation calibration.",
+  "categories": ["raw", "processed", "consumable", "durable", "storage"],
+  "chains": [
+    "oak_log -> planks -> stick / bowl / chest / barrel / tools",
+    "iron_ingot + chest -> hopper",
+    "iron_ingot + redstone + cobblestone + planks -> piston",
+    "cobblestone + redstone + quartz -> observer",
+    "sand + coal -> glass -> glass_pane",
+    "sugar_cane -> paper + leather -> book -> bookshelf",
+    "wheat -> bread",
+    "potato + fuel -> baked_potato",
+    "carrot + gold -> golden_carrot",
+    "iron -> rail / minecart / bucket / shears / tools / block",
+    "gold -> powered_rail / block",
+    "coal + stick -> torch",
+    "gunpowder + sand -> tnt"
+  ],
+  "simulation_defaults": {
+    "players": 80,
+    "days": 365,
+    "player_hours": [0.5, 1, 2, 3, 6],
+    "overseas_sink": true,
+    "investment_enabled": true,
+    "price_model": "target-stock elasticity"
+  }
+}
