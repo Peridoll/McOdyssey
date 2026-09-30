@@ -1,6 +1,0 @@
-name: McOdyssey
-version: '${version}'
-
-main: org.peridoll.mcOdyssey.McOdyssey
-api-version: '26.1.2'
-load: POSTWORLD

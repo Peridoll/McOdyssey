@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "mcodyssey_eco",
+  "version": "${version}",
+  "name": "McOdyssey-Eco",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.peridoll.mcodyssey.eco.EcoMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "mcodyssey_core": ">=0.1.0"
+  }
+}

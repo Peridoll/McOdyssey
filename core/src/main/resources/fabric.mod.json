@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "mcodyssey_core",
+  "version": "${version}",
+  "name": "McOdyssey-Core",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.peridoll.mcodyssey.core.CoreMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
