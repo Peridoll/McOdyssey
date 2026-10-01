@@ -1,0 +1,26 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+> Configure project :
+Fabric Loom: 1.7.4
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/workspace/scratch/dc97c4311466/McOdyssey/build.gradle' line: 3
+
+* What went wrong:
+A problem occurred evaluating root project 'McOdyssey'.
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+
+原因抜粋（完全なスタックトレースから）:
+Caused by: java.lang.ExceptionInInitializerError
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Operation not permitted
+	at net.fabricmc.loom.util.CurrentPlatform.isUnixDomainSocketsSupported(CurrentPlatform.java:89)
+Caused by: java.net.SocketException: Operation not permitted
+	at net.fabricmc.loom.util.CurrentPlatform.isUnixDomainSocketsSupported(CurrentPlatform.java:84)

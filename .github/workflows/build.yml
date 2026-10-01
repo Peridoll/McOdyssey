@@ -19,3 +19,12 @@ jobs:
           path: |
             core/build/libs/McOdyssey-Core-0.1.0.jar
             eco/build/libs/McOdyssey-Eco-0.1.0.jar
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: McOdyssey-test-results
+          path: |
+            core/build/test-results/test/*.xml
+            eco/build/test-results/test/*.xml
+            core/build/reports/tests/test/**
+            eco/build/reports/tests/test/**

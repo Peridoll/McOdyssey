@@ -1,0 +1,50 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+╷
+├─ JUnit Platform Suite ✔
+├─ JUnit Jupiter ✔
+│  ├─ CoreEcoIntegrationTest ✔
+│  │  ├─ IT09_overflowRollsBackDebitAndLedger() ✔
+│  │  ├─ IT02_registerRenameWithoutResettingFirstJoin() ✔
+│  │  ├─ IT10_unknownResidentIsRejectedByForeignKey() ✔
+│  │  ├─ IT08_historyIsNewestFirstLimitedToTenAndUsesCurrentName() ✔
+│  │  ├─ IT03_repeatedInitializationAndRegistrationDoNotIssueMoneyAgain() ✔
+│  │  ├─ IT04_successfulTransferRecordsBothHistoryDirections() ✔
+│  │  ├─ IT05_insufficientFundsRollBackAllChanges() ✔
+│  │  ├─ IT07_reopenDatabasePreservesBalancesAndLedger() ✔
+│  │  ├─ IT06_concurrentTransfersHaveExactlyTenSuccesses() ✔
+│  │  └─ IT01_coreAloneHasNoEconomyTables() ✔
+│  ├─ DatabaseTest ✔
+│  │  ├─ UT_C01_workerThreadAndOrdering() ✔
+│  │  ├─ UT_C03_foreignKeysEnabled() ✔
+│  │  ├─ UT_C02_commitAndRollback() ✔
+│  │  └─ UT_C04_shutdownDrainsQueuedWrites() ✔
+│  ├─ EconomyTest ✔
+│  │  ├─ concurrentTransfersConserveMoney() ✔
+│  │  ├─ recipientOverflowRollsBackDebit() ✔
+│  │  ├─ transferAndPersistence() ✔
+│  │  └─ insufficientAndInvalidPaymentsDoNotChangeBalance() ✔
+│  └─ EconomyValidationTest ✔
+│     ├─ UT_E03_selfTransfer() ✔
+│     ├─ UT_E01_zero() ✔
+│     └─ UT_E02_negative() ✔
+└─ JUnit Vintage ✔
+
+Test run finished after 408 ms
+[         7 containers found      ]
+[         0 containers skipped    ]
+[         7 containers started    ]
+[         0 containers aborted    ]
+[         7 containers successful ]
+[         0 containers failed     ]
+[        21 tests found           ]
+[         0 tests skipped         ]
+[        21 tests started         ]
+[         0 tests aborted         ]
+[        21 tests successful      ]
+[         0 tests failed          ]
+
